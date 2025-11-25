@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+
+        }
+        html,*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main{
+            width: 1200px;
+            height: auto;
+            background-color: bisque;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+        }
+        section{
+            height: 400px;
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+        header,nav,footer{
+            height: 150px;
+            background-color: #ccc;
+            text-align: center;
+            line-height: 150px;
+        }
+        #left{
+            flex-grow: 2;
+            background-color: violet;
+        }
+        #right{
+            flex-grow: 1;
+            background-color: rgb(112, 128, 232);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+        }
+        #rgt_top{
+            height: 200px;
+            background-color: rgb(15, 86, 86);
+
+        }
+        #rgt_btm{
+            height: 200px;
+            background-color: chocolate;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h2>#HEADER</h2>
+        </header>
+        <NAV>
+            <h2>#NAV GLOBAL</h2>
+        </NAV>
+        <section>
+            <div id="left">
+            <h2>
+                #LEFT
+            </h2>
+            </div>
+            <div id="right">
+                <div id="rgt_top">
+                    <h2>#RIGHT TOP
+                </h2></div>
+                <div id="rgt_btm">
+                    <h2>
+                        #RIGHT BOTTOM
+                    </h2>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h2>#FOOTER</h2>
+        </footer>
+    </main>
+</body>
+</html>
